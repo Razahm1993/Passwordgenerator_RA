@@ -14,7 +14,7 @@ const generatePassword = () => {
   getPasswordLength ();
   return createRandomPassword ();
 };
-
+//funtion to get password length and checkif bteween 8 and 128 cahacters it also check if is Number 
 function getPasswordLength () {
   let passwordlen = prompt ('Please enter Password length');
   let passwordlenint = parseInt (passwordlen);
@@ -32,7 +32,7 @@ function getPasswordLength () {
 }
 
 // present 4 confim qestion
-// return array
+// return array in varible above 
 
 function getPasswordCritera () {
   let uppercase = confirm ('would you like  to include Uppercase words ? ');
@@ -59,6 +59,11 @@ function getPasswordCritera () {
   }
 }
 
+
+//this is where the magic happens 
+//from the function it grabs the lenght of required password then a uses that to repeats the length  to obatin each charecter 
+//it then collected easch caharter  as an result
+//when as return to the intial funtion  
 function createRandomPassword () {
   let result = '';
   let number = passwordlenfinal;
